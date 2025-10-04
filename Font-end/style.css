@@ -1,0 +1,135 @@
+/* Reset default margins and fonts */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: "Poppins", sans-serif;
+       }
+       body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       background: #f2f3f7;
+       }
+       .container {
+       text-align: center;
+       width: 100%;
+       max-width: 350px; /* desktop width limit */
+       padding: 20px;
+       }
+       .circle {
+       width: 80px;
+       height: 80px;
+       background: #3b82f6; /* blue circle */
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto 20px;
+       }
+       .logo-img{
+              width:100%;
+              height: auto;
+              filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0,0,0,0.7));
+       }
+       .title {
+       font-size: 18px;
+       font-weight: 700;
+       color: #111827;
+       margin-bottom: 10px;
+       letter-spacing: 1px;
+       }
+       .login-text {
+       font-size: 24px;
+       font-weight: 700;
+       color: #3b82f6;
+       margin-bottom: 25px;
+       }
+       form {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       }
+       form input {
+       padding: 14px;
+       border-radius: 25px;
+       border: none;
+       outline: none;
+       font-size: 15px;
+       background: white;
+       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+       transition: 0.2s;
+       }
+       form input:focus {
+       box-shadow: 0 0 6px rgba(59,130,246,0.6);
+       }
+       form button {
+       padding: 14px;
+       border-radius: 25px;
+       border: none;
+       background: #3b82f6;
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       cursor: pointer;
+       transition: background 0.3s;
+       }
+       form button:hover {
+       background: #2563eb; /* darker blue */
+       }
+       .signup {
+       margin-top: 20px;
+       font-size: 14px;
+       color: #6b7280;
+       }
+       .signup a {
+       color: #3b82f6;
+       text-decoration: none;
+       font-weight: 500;
+       }
+       /* ------------------ RESPONSIVE ------------------ */
+       /* Small devices (phones) */
+       @media (max-width: 480px) {
+       .container {
+       max-width: 90%;
+       padding: 15px;
+       }
+       .circle {
+       width: 65x;
+       height: 65px;
+       }
+      
+       .title {
+       font-size: 16px;
+       }
+       .login-text {
+       font-size: 20px;
+       }
+       form input,
+       form button {
+       font-size: 14px;
+       padding: 12px;
+       }
+       }
+       /* Large devices (desktop/laptops) */
+       @media (min-width: 1024px) {
+       .container {
+       max-width: 420px;
+       }
+       .circle {
+       width: 120px;
+       height: 120px;
+       }
+       .title {
+              font-size: 28px;
+              }
+      
+       .login-text {
+       font-size: 40px;
+       }
+       form input,
+       form button {
+       font-size: 40px;
+       }
+       }
