@@ -1,0 +1,146 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    body {
+    background-color: #f6f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+    /* Container */
+    .container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        background: #3b82f6; /* blue circle */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+    
+        }
+        
+        .logo-img{
+            width:100%;
+            height: auto;
+            filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0,0,0,0.7));
+     }
+    .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 20px;
+    }
+    /* Card */
+    .form-card {
+    background: #a1a1a1;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .form-card h2 {
+    font-size: 1.25rem;
+    color: #0021b6;
+    margin-bottom: 10px;
+    }
+    .form-card p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    }
+    /* Form styling */
+    .form-group {
+    margin-bottom: 15px;
+    }
+    label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+    }
+    input:focus {
+    border-color: #3b82f6;
+    }
+    /* Upload section */
+    .upload-box {
+    border: 2px dashed #cfd8dc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f9fafc;
+    position: relative;
+    }
+    .upload-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    }
+    .upload-box p {
+    color: #555;
+    font-size: 0.9rem;
+    }
+    .upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    }
+    /* Button */
+    .btn {
+    display: block;
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    .btn:hover {
+    background-color: #1e40af;
+    }
+    /* Responsive */
+    @media (min-width: 768px) {
+    .container {
+    max-width: 600px;
+    }
+    .form-card {
+    padding: 30px;
+    }
+    .title {
+    font-size: 2.2rem;
+    }
+    input[type="text"], input[type="date"] {
+    font-size: 1rem;
+    }
+    }
