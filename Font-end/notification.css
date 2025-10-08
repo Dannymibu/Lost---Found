@@ -1,0 +1,117 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    }
+    body {
+    background-color: #f9fbff;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    }
+    /* Header */
+    .app-header {
+    text-align: center;
+    margin-top: 40px;
+    }
+    .circle{
+        width: 95px;
+        height: 95px;
+        border-radius: 60%;
+        background-color: #0a2cff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+     
+    }
+  .circle img{
+     width: 100%;
+     filter: brightness(0) invert(1);
+
+  }
+    .subtitle {
+    font-size: 20px;
+    font-weight: 700px;
+    color: #000000;
+    margin-top: 4px;
+    }
+    /* Notification Card */
+    .notification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    }
+    .notification-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px 24px;
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+    }
+    .user-icon {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 16px;
+    }
+    .user-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    }
+  
+    .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #101828;
+    }
+    .message {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #213e55;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    }
+    .btn-primary {
+    background-color: #0056ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    }
+    .btn-primary:hover {
+    background-color: #0044cc;
+    }
+    /* Responsive design */
+    @media (max-width: 600px) {
+    .notification-card {
+    padding: 20px 16px;
+    }
+    .user-icon img {
+    width: 90px;
+    height: 90px;
+    }
+    .title {
+    font-size: 1.3rem;
+    }
+    .message {
+    font-size: 0.95rem;
+    }
+    .btn-primary {
+    width: 100%;
+    }
+    }
