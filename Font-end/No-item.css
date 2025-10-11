@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    }
+    body {
+    background-color: #f9fafc;
+    color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    }
+    .container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        background: #0a2cff; /* blue circle */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+    
+        }
+    .circle img{
+        width: 100%;
+        filter: brightness(0) invert(1);
+    }
+        
+   
+    .brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0a2a6c;
+    }
+    .subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0a2a6c;
+    margin-bottom: 2rem;
+    }
+    .illustration {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+    }
+    h2 {
+    font-size: 1.3rem;
+    color: #0a2a6c;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    }
+    .message {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0a2a6c;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    }
+    /* Responsive design */
+    @media (max-width:480px) {
+    .container {
+    width: 90%;
+    padding: 1.5rem;
+    }
+    .illustration {
+    width: 100px;
+    height: 100px;
+    }
+  
