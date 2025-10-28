@@ -38,8 +38,7 @@
 </div>
 <div class="upload-box">
 <div class="upload-icon">
-<img src="images/lost.png" alt="upload
-icon">
+<img src="images/lost.png" alt="upload icon">
 </div>
 <p>Drag & drop files<br>or choose image</p>
 <input type="file" id="fileUpload" accept="image/*" />
@@ -48,5 +47,29 @@ icon">
 </form>
 </div>
 </div>
+
+<!-- Popup Modal -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-box">
+    <div class="popup-icon">✔</div>
+    <h3>Submission Successful!</h3>
+    <p>Your lost item report has successfully been submitted. You will receive a notification via
+    the notification module once your item is found.</p>
+    <button id="closePopup" class="ok-btn">OK</button>
+    </div>
+    </div>
+    <script>
+    const form = document.querySelector('form'); // Your form element
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+    form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent real submission for now
+    popup.style.display = 'flex'; // Show popup
+    form.reset(); // Optional: clears inputs
+    });
+    closePopup.addEventListener('click', () => {
+    popup.style.display = 'none'; // Hide popup
+    });
+    </script>
 </body>
 </html>
