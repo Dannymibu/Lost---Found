@@ -27,11 +27,34 @@
 </div>
 <div class="form-group">
 <label for="description">Description</label>
-<textarea id="description" name="description" rows="5" placeholder="Describe the item...">
+<textarea id="description" name="description" rows="5" placeholder="Describe the item..." required>
 </textarea>
 </div>
 <button type="submit" class="submit-btn">Submit</button>
 </form>
 </div>
+<!-- Popup Modal -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-box">
+    <div class="popup-icon">✔</div>
+    <h3>Submission Successful!</h3>
+    <p>Your lost item report has successfully been submitted. You will receive a notification via
+    the notification module once your item is found.</p>
+    <button id="closePopup" class="ok-btn">OK</button>
+    </div>
+    </div>
+    <script>
+    const form = document.querySelector('form'); // Your form element
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+    form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent real submission for now
+    popup.style.display = 'flex'; // Show popup
+    form.reset(); // Optional: clears inputs
+    });
+    closePopup.addEventListener('click', () => {
+    popup.style.display = 'none'; // Hide popup
+    });
+    </script>
 </body>
 </html>
